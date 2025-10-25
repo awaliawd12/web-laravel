@@ -15,7 +15,7 @@ Route::post('/kategori-buku.data',[KategoriBukuController::class,'store']);
 Route::get('/penerbit',[PenerbitController::class,'index']);
 Route::get('/penerbit.create',[PenerbitController::class,'create']);
 Route::post('/penerbit', [PenerbitController::class,'store']);
-Route::get('/penerbit.{id}.edit',[PenerbitController::class, 'edit'])->name('penerbit.edit');
+Route::get('/penerbit.{id}.edit',[PenerbitController::class, 'edit']);
 Route::put('/penerbit.{id}',[PenerbitController::class,'update']);
 Route::delete('/penerbit.{id}',[PenerbitController::class,'destroy']);
 Route::get('/tag', [TagController::class,'index']);
