@@ -10,4 +10,9 @@ class Penerbit extends Model
     use HasFactory;
     protected $table = 'penerbit';
     protected $primaryKey = 'id_penerbit';
+    protected $fillable = ['penerbit','alamat'];
+
+    public function telepon(){
+        return $this->hasOne("App\Models\Telepon","id_penerbit");
+    }
 }
